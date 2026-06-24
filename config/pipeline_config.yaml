@@ -1,0 +1,31 @@
+pipeline:
+  name: finmark_data_pipeline
+  version: "1.0"
+  environment: development
+
+sources:
+  trend_report:
+    file: data/raw/trend_report.csv
+    key_columns: [week, avg_users, sales_growth_rate]
+    date_column: week
+
+  marketing_summary:
+    file: data/raw/marketing_summary.csv
+    key_columns: [date, users_active, total_sales, new_customers]
+    date_column: date
+
+  event_logs:
+    file: data/raw/event_logs.csv
+    key_columns: [user_id, event_type, event_time, product_id]
+    date_column: event_time
+
+cleaning:
+  null_threshold: 0.5
+  drop_full_null_rows: true
+  standardize_dates: true
+
+output:
+  cleaned_dir: data/cleaned
+  processed_dir: data/processed
+  format: csv
+  log_file: logs/pipeline_run.log

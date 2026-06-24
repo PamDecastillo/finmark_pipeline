@@ -1,0 +1,38 @@
+2026-06-24 10:46:06,702 [INFO] Pipeline started: 2026-06-24 10:46:06.702074
+2026-06-24 10:46:06,702 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:03:33,727 [INFO] Pipeline started: 2026-06-24 11:03:33.727067
+2026-06-24 11:03:33,727 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:05:05,252 [INFO] Pipeline started: 2026-06-24 11:05:05.252734
+2026-06-24 11:05:05,253 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:11:03,703 [INFO] Pipeline started: 2026-06-24 11:11:03.703156
+2026-06-24 11:11:03,703 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:15:09,932 [INFO] Pipeline started: 2026-06-24 11:15:09.932712
+2026-06-24 11:15:09,933 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:15:09,956 [INFO]   Loaded 20 rows, 50 columns
+2026-06-24 11:15:10,016 [INFO] === Cleaning: marketing_summary ===
+2026-06-24 11:15:10,028 [INFO]   Loaded 100 rows, 50 columns
+2026-06-24 11:15:10,041 [INFO] === Cleaning: event_logs ===
+2026-06-24 11:15:10,136 [INFO]   Loaded 2000 rows, 50 columns
+2026-06-24 11:15:10,139 [WARNING]   Dropping high-null columns: ['amount']
+2026-06-24 11:15:10,836 [INFO] === Transforming: marketing_summary ===
+2026-06-24 11:15:10,860 [INFO] === Transforming: event_logs ===
+2026-06-24 11:15:10,888 [INFO] === Transforming: trend_report ===
+2026-06-24 11:17:01,840 [INFO] Pipeline started: 2026-06-24 11:17:01.840051
+2026-06-24 11:17:01,840 [INFO] === Cleaning: trend_report ===
+2026-06-24 11:17:01,843 [INFO]   Loaded 20 rows, 50 columns
+2026-06-24 11:17:01,850 [INFO]   Saved → data/cleaned/trend_report_cleaned.csv (20 rows)
+2026-06-24 11:17:01,850 [INFO] === Cleaning: marketing_summary ===
+2026-06-24 11:17:01,855 [INFO]   Loaded 100 rows, 50 columns
+2026-06-24 11:17:01,863 [INFO]   Saved → data/cleaned/marketing_summary_cleaned.csv (100 rows)
+2026-06-24 11:17:01,863 [INFO] === Cleaning: event_logs ===
+2026-06-24 11:17:01,878 [INFO]   Loaded 2000 rows, 50 columns
+2026-06-24 11:17:01,879 [WARNING]   Dropping high-null columns: ['amount']
+2026-06-24 11:17:01,891 [INFO]   Saved → data/cleaned/event_logs_cleaned.csv (1787 rows)
+2026-06-24 11:17:01,891 [INFO] ✅ Cleaning complete
+2026-06-24 11:17:02,649 [INFO] === Transforming: marketing_summary ===
+2026-06-24 11:17:02,658 [INFO]   Saved → data/processed/marketing_kpis.csv (100 rows)
+2026-06-24 11:17:02,658 [INFO] === Transforming: event_logs ===
+2026-06-24 11:17:02,696 [INFO]   Saved → data/processed/event_funnel_daily.csv (6 rows)
+2026-06-24 11:17:02,696 [INFO] === Transforming: trend_report ===
+2026-06-24 11:17:02,706 [INFO]   Saved → data/processed/trend_report_processed.csv (20 rows)
+2026-06-24 11:17:02,706 [INFO] ✅ Transformation complete

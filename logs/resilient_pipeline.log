@@ -1,0 +1,30 @@
+2026-06-26 14:44:56,081 - ========================================
+2026-06-26 14:44:56,081 -   FinMark Pipeline - Milestone 2 Draft 2
+2026-06-26 14:44:56,081 -   Group 5 A3101
+2026-06-26 14:44:56,081 - ========================================
+2026-06-26 14:44:56,081 - --- Starting trend_report cleaning ---
+2026-06-26 14:44:56,096 - Loaded trend_report: 20 rows, 50 columns
+2026-06-26 14:44:56,103 - trend_report - all required columns found
+2026-06-26 14:44:56,105 - WARNING: trend_report column 'sales_growth_rate' has 4 negative values - setting to 0
+2026-06-26 14:44:56,112 - Saved cleaned trend_report: 20 rows
+2026-06-26 14:44:56,112 - --- Starting marketing_summary cleaning ---
+2026-06-26 14:44:56,129 - Loaded marketing_summary: 100 rows, 50 columns
+2026-06-26 14:44:56,163 - marketing_summary - all required columns found
+2026-06-26 14:44:56,179 - Saved cleaned marketing_summary: 100 rows
+2026-06-26 14:44:56,179 - --- Starting event_logs cleaning ---
+2026-06-26 14:44:56,220 - Loaded event_logs: 2000 rows, 50 columns
+2026-06-26 14:44:56,222 - Dropping amount because it is 51% empty
+2026-06-26 14:44:56,222 - WARNING: event_logs is missing column: amount
+2026-06-26 14:44:56,223 - FIXED: added missing column 'amount' with default value: 0.0
+2026-06-26 14:44:56,225 - Dropped 0 rows with missing key fields
+2026-06-26 14:44:56,229 - Removed 0 duplicate rows
+2026-06-26 14:44:56,231 - Removed 213 rows with unknown event types
+2026-06-26 14:44:56,239 - Saved cleaned event_logs: 1787 rows
+2026-06-26 14:44:56,240 - --- Starting transformations ---
+2026-06-26 14:44:56,256 - Saved marketing_kpis: 100 rows
+2026-06-26 14:44:56,276 - Saved event_funnel_daily: 6 rows
+2026-06-26 14:44:56,287 - Saved trend_report_processed: 20 rows
+2026-06-26 14:44:56,287 - ========================================
+2026-06-26 14:44:56,287 -   Pipeline done! Check data/cleaned/
+2026-06-26 14:44:56,287 -   and data/processed/ for output files
+2026-06-26 14:44:56,287 - ========================================
